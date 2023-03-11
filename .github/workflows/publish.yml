@@ -46,7 +46,7 @@ jobs:
       - name: Build Project
         run: pnpm run build
       - name: Build Demo Page
-        run: pnpm run demo:build
+        run: pnpm run build:demo
       - name: Setup Pages
         uses: actions/configure-pages@v2
       - name: Upload artifact

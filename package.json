@@ -6,7 +6,7 @@
     "test": "mocha test/test.js",
     "build": "rollup -c",
     "demo": "vite demo",
-    "demo:build": "vite build demo --outDir dist --base /codemirror-lang-snbt/"
+    "build:demo": "vite build demo --base /codemirror-lang-snbt/"
   },
   "type": "module",
   "main": "dist/index.js",
