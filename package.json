@@ -5,8 +5,8 @@
   "scripts": {
     "test": "mocha test/test.js",
     "build": "rollup -c",
-    "demo": "parcel demo/index.html",
-    "demo:build": "parcel build --dist-dir=web --public-url=./ demo/index.html"
+    "demo": "vite demo",
+    "demo:build": "vite build demo --outDir dist --base /codemirror-lang-snbt/"
   },
   "type": "module",
   "main": "dist/index.js",
@@ -26,12 +26,9 @@
     "@rollup/plugin-typescript": "^11.0.0",
     "codemirror": "^6.0.1",
     "mocha": "^9.0.1",
-    "parcel": "^2.8.3",
-    "process": "^0.11.10",
     "rollup": "^2.60.2",
-    "rollup-plugin-dts": "^4.0.1",
-    "rollup-plugin-ts": "^3.0.2",
-    "typescript": "^4.3.4"
+    "typescript": "^4.3.4",
+    "vite": "^4.1.4"
   },
   "license": "MIT"
 }

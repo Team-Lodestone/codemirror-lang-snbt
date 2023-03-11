@@ -1,8 +1,7 @@
 /node_modules
 package-lock.json
 pnpm-lock.yaml
-/dist
+dist
 /src/*.js
 /src/*.d.ts
 .parcel-cache
-web
