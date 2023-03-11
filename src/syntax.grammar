@@ -33,6 +33,4 @@ PropertyName { string }
 @skip { whitespace }
 list<item> { item ("," item)* }
 
-@external propSource snbtHighlighting from "./highlight"
-
 @detectDelim
