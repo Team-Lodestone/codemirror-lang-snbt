@@ -1,4 +1,4 @@
-import {EXAMPLELanguage} from "../dist/index.js"
+import {SNBTLanguage} from "../dist/index.js"
 import {fileTests} from "@lezer/generator/dist/test"
 
 import * as fs from "fs"

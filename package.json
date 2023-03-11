@@ -4,16 +4,17 @@
   "description": "EXAMPLE language support for CodeMirror",
   "scripts": {
     "test": "mocha test/test.js",
-    "prepare": "rollup -c"
+    "build": "rollup -c",
+    "demo": "parcel demo/index.html",
+    "demo:build": "parcel build --dist-dir=web --public-url=./ demo/index.html"
   },
   "type": "module",
-  "main": "dist/index.cjs",
-  "module": "dist/index.js",
-  "exports": {
-    "import": "./dist/index.js",
-    "require": "./dist/index.cjs"
-  },
+  "main": "dist/index.js",
   "types": "dist/index.d.ts",
+  "targets": {
+    "main": false,
+    "types": false
+  },
   "sideEffects": false,
   "dependencies": {
     "@codemirror/language": "^6.0.0",
@@ -23,7 +24,10 @@
   "devDependencies": {
     "@lezer/generator": "^1.0.0",
     "@rollup/plugin-typescript": "^11.0.0",
+    "codemirror": "^6.0.1",
     "mocha": "^9.0.1",
+    "parcel": "^2.8.3",
+    "process": "^0.11.10",
     "rollup": "^2.60.2",
     "rollup-plugin-dts": "^4.0.1",
     "rollup-plugin-ts": "^3.0.2",

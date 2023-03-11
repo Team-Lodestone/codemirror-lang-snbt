@@ -1,7 +1,6 @@
-# Booleans
+# Small Compound
 
-#t
-#f
+{ "a": b }
 
 ==>
 

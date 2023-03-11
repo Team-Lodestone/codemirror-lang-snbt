@@ -4,3 +4,5 @@ pnpm-lock.yaml
 /dist
 /src/*.js
 /src/*.d.ts
+.parcel-cache
+web
