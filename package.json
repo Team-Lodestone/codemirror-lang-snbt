@@ -5,8 +5,9 @@
   "scripts": {
     "test": "mocha test/test.js",
     "build": "rollup -c",
-    "demo": "vite demo",
-    "build:demo": "vite build demo --base /codemirror-lang-snbt/"
+    "demo": "vite demo --base /codemirror-lang-snbt",
+    "build:demo": "vite build demo --base /codemirror-lang-snbt",
+    "demo:preview": "vite preview demo --base /codemirror-lang-snbt"
   },
   "type": "module",
   "main": "dist/index.js",

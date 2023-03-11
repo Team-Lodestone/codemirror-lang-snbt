@@ -1,4 +1,4 @@
-import {EditorView, basicSetup} from "codemirror"
+import { EditorView, basicSetup } from "codemirror"
 import { SNBT } from "../dist/index.js"
 
 new EditorView({
