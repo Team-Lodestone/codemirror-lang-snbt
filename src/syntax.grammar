@@ -7,7 +7,7 @@ Object { "{" list<Property>? "}" }
 Array  { "[" list<value>? "]" }
 
 Property { PropertyName ":" value }
-PropertyName { string }
+PropertyName { string | '"' string '"' }
 
 
 @tokens {
