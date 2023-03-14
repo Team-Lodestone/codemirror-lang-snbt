@@ -13,7 +13,7 @@ new EditorView({
     EditorView.updateListener.of((e) => {
       try {
         const tree = SNBTLanguage.parser.parse(e.state.doc.toString());
-        output.innerText = JSON.stringify(tree.children)
+        output.innerText = tree.children.toString()
       } catch (e) {
         output.innerText = e.message;
         console.error(e);
